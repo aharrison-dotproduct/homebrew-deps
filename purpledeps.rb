@@ -8,6 +8,7 @@ class Purpledeps < Formula
 
   depends_on 'libcvd'
   depends_on 'toon'
+  depends_on 'openni2'
   depends_on 'jpeg'
   depends_on 'libtiff'
   depends_on 'libpng'
