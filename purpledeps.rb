@@ -16,6 +16,7 @@ class Purpledeps < Formula
   depends_on 'mono'
   depends_on 'eigen'
   depends_on 'boost'
+  depends_on 'zmq'
 
   def install
   end
