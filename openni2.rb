@@ -29,6 +29,8 @@
 # CHANGES:
 # 10/05/2014 arh
 #  - Modified include dir 'ni2' -> 'OpenNI2'
+# 12/05/2014 arh
+#  - libs not installed into ni2 subdir
 
 require 'formula'
 
@@ -65,7 +67,6 @@ class Openni2 < Formula
 
     cd 'out'
 
-    (lib+'ni2').install Dir['Redist/*']
     (share+'openni2/tools').install Dir['Tools/*']
     (share+'openni2/samples').install Dir['Samples/*']
     doc.install Dir['Documentation'] if build.with? 'docs'
@@ -73,6 +74,11 @@ class Openni2 < Formula
     # Purpleray expects to find includes in the 'OpenNI2' dir, not 'ni2'
     #(include+'ni2').install Dir['Include/*']
     (include+'OpenNI2').install Dir['Include/*']
+    
+    # Purpleray expects to find libOpenNI2.dylib in /usr/local/lib
+    #(lib+'ni2').install Dir['Redist/*']
+    lib.install Dir['Redist/*']    
+
   end
 
   def caveats; <<-EOS.undent
