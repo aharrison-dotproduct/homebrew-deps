@@ -10,6 +10,7 @@ class Purpledeps < Formula
   depends_on 'toon'
   depends_on 'openni2'
   depends_on 'jpeg'
+  depends_on 'cryptopp'
   depends_on 'libtiff'
   depends_on 'libpng'
   depends_on 'libdc1394'
