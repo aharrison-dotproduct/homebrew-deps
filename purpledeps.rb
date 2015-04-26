@@ -6,6 +6,8 @@ class Purpledeps < Formula
   sha1 "b231d034cead2eb488d9648714776658a2979ff0"
   version "1.0"
 
+  depends_on 'cmake'
+  depends_on 'git'
   depends_on 'libcvd'
   depends_on 'toon'
   depends_on 'openni2'
