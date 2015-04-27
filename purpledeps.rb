@@ -21,10 +21,4 @@ class Purpledeps < Formula
   depends_on 'boost'
   depends_on 'zmq'
   depends_on 'protobuf'
-
-  def install
-    ln_s "/usr/local/include/ni2", "/usr/local/include/OpenNI2"
-    ln_s "/usr/local/lib/ni2/libOpenNI2.dylib", "/usr/local/lib/libOpenNI2.dylib"
-  end
-
 end
