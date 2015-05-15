@@ -21,4 +21,5 @@ class Purpledeps < Formula
   depends_on 'boost'
   depends_on 'zmq'
   depends_on 'protobuf'
+  depends_on 'pkgconfig'
 end
