@@ -16,6 +16,10 @@ class Libcvd < Formula
   def install
     system "./configure", "--disable-debug",
                           "--disable-dependency-tracking",
+                          "--without-jpeg",
+                          "--without-tiff",
+                          "--without-lapack",
+                          "--without-dc1394v2",
                           "--disable-silent-rules",
                           "--prefix=#{prefix}"
 
